@@ -1,5 +1,4 @@
 {
- "actions": [],
  "allow_events_in_timeline": 1,
  "allow_import": 1,
  "allow_rename": 1,
@@ -74,7 +73,6 @@
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "SUP-.YYYY.-",
    "set_only_once": 1
   },
   {
@@ -384,8 +382,7 @@
  "icon": "fa fa-user",
  "idx": 370,
  "image_field": "image",
- "links": [],
- "modified": "2020-06-17 23:28:30",
+ "modified": "2020-12-29 13:33:54.022868",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Supplier",
