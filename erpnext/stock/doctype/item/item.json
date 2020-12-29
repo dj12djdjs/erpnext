@@ -13,6 +13,9 @@
   "name_and_description_section",
   "naming_series",
   "item_code",
+  "oem_number",
+  "rebate_group",
+  "pl",
   "variant_of",
   "item_name",
   "item_group",
@@ -26,6 +29,7 @@
   "opening_stock",
   "valuation_rate",
   "standard_rate",
+  "min_sell_qty",
   "is_fixed_asset",
   "auto_create_assets",
   "asset_category",
@@ -35,6 +39,7 @@
   "image",
   "section_break_11",
   "brand",
+  "additional_info",
   "description",
   "sb_barcodes",
   "barcodes",
@@ -344,8 +349,7 @@
   {
    "fieldname": "shelf_life_in_days",
    "fieldtype": "Int",
-   "label": "Shelf Life In Days",
-   "mandatory_depends_on": "eval:doc.has_batch_no && doc.has_expiry_date"
+   "label": "Shelf Life In Days"
   },
   {
    "default": "2099-12-31",
@@ -1053,6 +1057,45 @@
    "fieldtype": "Data",
    "label": "Default Manufacturer Part No",
    "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "oem_number",
+   "fieldtype": "Data",
+   "label": "OEM Number",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "default": "00",
+   "fieldname": "rebate_group",
+   "fieldtype": "Data",
+   "label": "Rebate Group",
+   "length": 2,
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "pl",
+   "fieldtype": "Data",
+   "label": "PL"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "1",
+   "description": "Example: 2 would suggest a quantity of 2pcs. -2 would require 2pcs.",
+   "fieldname": "min_sell_qty",
+   "fieldtype": "Int",
+   "label": "Minimum Selling Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "additional_info",
+   "fieldtype": "Data",
+   "label": "Additional Info"
   }
  ],
  "has_web_view": 1,
@@ -1060,7 +1103,7 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
- "modified": "2020-08-06 17:03:26.594319",
+ "modified": "2020-12-29 13:29:45.598825",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
