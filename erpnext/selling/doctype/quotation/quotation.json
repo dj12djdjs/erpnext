@@ -7,6 +7,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "custom_section",
+  "sales_person",
+  "vehicle",
+  "vin",
+  "note",
   "customer_section",
   "title",
   "naming_series",
@@ -131,7 +136,7 @@
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "SAL-QTN-.YYYY.-",
+   "options": "PR.####",
    "print_hide": 1,
    "reqd": 1,
    "set_only_once": 1
@@ -922,13 +927,37 @@
    "label": "Lost Reasons",
    "options": "Quotation Lost Reason Detail",
    "read_only": 1
+  },
+  {
+   "fieldname": "custom_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Data",
+   "label": "Sales Person"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Data",
+   "label": "Vehicle"
+  },
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "VIN"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note"
   }
  ],
  "icon": "fa fa-shopping-cart",
  "idx": 82,
  "is_submittable": 1,
  "max_attachments": 1,
- "modified": "2020-08-12 23:35:13.621823",
+ "modified": "2020-12-29 13:27:26.139689",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Quotation",
