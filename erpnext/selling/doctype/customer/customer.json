@@ -13,6 +13,7 @@
   "naming_series",
   "salutation",
   "customer_name",
+  "default_discount",
   "gender",
   "customer_type",
   "default_bank_account",
@@ -479,13 +480,20 @@
    "fieldname": "dn_required",
    "fieldtype": "Check",
    "label": "Allow Sales Invoice Creation Without Delivery Note"
+  },
+  {
+   "default": "0",
+   "fieldname": "default_discount",
+   "fieldtype": "Float",
+   "label": "Default Discount",
+   "reqd": 1
   }
  ],
  "icon": "fa fa-user",
  "idx": 363,
  "image_field": "image",
- "modified": "2021-01-01 23:55:49.492490",
- "modified_by": "ds@partsupinc.com",
+ "modified": "2021-01-03 17:39:52.511591",
+ "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",
  "name_case": "Title Case",
