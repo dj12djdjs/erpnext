@@ -14,6 +14,7 @@
   "salutation",
   "customer_name",
   "default_discount",
+  "delivery_term",
   "gender",
   "customer_type",
   "default_bank_account",
@@ -487,12 +488,19 @@
    "fieldtype": "Float",
    "label": "Default Discount",
    "reqd": 1
+  },
+  {
+   "fieldname": "delivery_term",
+   "fieldtype": "Link",
+   "label": "Delivery Term",
+   "options": "Delivery Term",
+   "reqd": 1
   }
  ],
  "icon": "fa fa-user",
  "idx": 363,
  "image_field": "image",
- "modified": "2021-01-03 17:39:52.511591",
+ "modified": "2021-01-03 17:57:48.099361",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",
