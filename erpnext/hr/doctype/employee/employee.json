@@ -130,7 +130,7 @@
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "HR-EMP-",
+   "options": "300600.###",
    "set_only_once": 1
   },
   {
@@ -782,7 +782,7 @@
  "icon": "fa fa-user",
  "idx": 24,
  "image_field": "image",
- "modified": "2020-01-09 04:23:55.611366",
+ "modified": "2021-01-04 11:31:39.689622",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Employee",
