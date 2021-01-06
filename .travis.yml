@@ -22,6 +22,10 @@ jobs:
     python: 3.6
     script: bench --site test_site run-tests --app erpnext --coverage
 
+  - name: "Python 3.8 Server Side Test"
+    python: 3.8
+    script: bench --site test_site run-tests --app erpnext --coverage
+
   - name: "Python 2.7 Patch Test"
     python: 2.7
     before_script:
@@ -31,6 +35,13 @@ jobs:
 
   - name: "Python 3.6 Patch Test"
     python: 3.6
+    before_script:
+      - wget http://build.erpnext.com/20171108_190013_955977f8_database.sql.gz
+      - bench --site test_site --force restore ~/frappe-bench/20171108_190013_955977f8_database.sql.gz
+    script: bench --site test_site migrate
+
+  - name: "Python 3.8 Patch Test"
+    python: 3.8
     before_script:
       - wget http://build.erpnext.com/20171108_190013_955977f8_database.sql.gz
       - bench --site test_site --force restore ~/frappe-bench/20171108_190013_955977f8_database.sql.gz
