@@ -589,7 +589,7 @@
    "options": "fa fa-shopping-cart"
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "update_stock",
    "fieldtype": "Check",
    "label": "Update Stock",
@@ -1569,8 +1569,8 @@
  "icon": "fa fa-file-text",
  "idx": 181,
  "is_submittable": 1,
- "modified": "2020-12-29 13:33:16.997410",
- "modified_by": "Administrator",
+ "modified": "2021-01-08 10:27:25.668944",
+ "modified_by": "ds@partsupinc.com",
  "module": "Accounts",
  "name": "Sales Invoice",
  "name_case": "Title Case",
