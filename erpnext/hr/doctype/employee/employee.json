@@ -82,6 +82,7 @@
   "date_of_issue",
   "valid_upto",
   "place_of_issue",
+  "sin",
   "column_break6",
   "marital_status",
   "blood_group",
@@ -130,7 +131,7 @@
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "HR-EMP-",
+   "options": "300600.###",
    "set_only_once": 1
   },
   {
@@ -777,12 +778,17 @@
    "fieldtype": "Link",
    "label": "Leave Approver",
    "options": "User"
+  },
+  {
+   "fieldname": "sin",
+   "fieldtype": "Data",
+   "label": "SIN"
   }
  ],
  "icon": "fa fa-user",
  "idx": 24,
  "image_field": "image",
- "modified": "2020-01-09 04:23:55.611366",
+ "modified": "2021-01-04 11:36:58.303833",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Employee",
