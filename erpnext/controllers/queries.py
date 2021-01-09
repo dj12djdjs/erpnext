@@ -527,7 +527,7 @@ def warehouse_query(doctype, txt, searchfield, start, page_len, filters):
 	query = """select `tabBin`.warehouse,
 			CONCAT_WS(" : ", "Actual Qty", ifnull(round(`tabBin`.actual_qty, 2), 0))
 			from `tabBin`
-			where 1 {bin_conditions} """.format(bin_conditions=get_filters_cond(doctype, filter_dict.get("Bin"), bin_conditions, ignore_permissions=True))
+			where 1 {bin_conditions} order by `tabBin`.warehouse asc, round(`tabBin`.actual_qty) desc """.format(bin_conditions=get_filters_cond(doctype, filter_dict.get("Bin"), bin_conditions, ignore_permissions=True))
 
 
 	return frappe.db.sql(query)
