@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "naming_series:",
  "creation": "2019-07-11 16:03:13.681045",
  "doctype": "DocType",
@@ -107,15 +106,14 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "STO-PICK-.YYYY.-",
+   "options": "STO-PICK-.####",
    "reqd": 1,
    "set_only_once": 1
   }
  ],
  "is_submittable": 1,
- "links": [],
- "modified": "2020-03-17 11:38:41.932875",
- "modified_by": "Administrator",
+ "modified": "2021-01-09 13:04:10.619135",
+ "modified_by": "ds@partsupinc.com",
  "module": "Stock",
  "name": "Pick List",
  "owner": "Administrator",
