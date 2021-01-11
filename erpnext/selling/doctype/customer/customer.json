@@ -15,6 +15,7 @@
   "customer_name",
   "default_discount",
   "delivery_term",
+  "discount_by_brand",
   "gender",
   "customer_type",
   "default_bank_account",
@@ -26,6 +27,7 @@
   "territory",
   "tax_id",
   "tax_category",
+  "default_currency",
   "so_required",
   "dn_required",
   "disabled",
@@ -34,7 +36,6 @@
   "allowed_to_transact_section",
   "companies",
   "currency_and_price_list",
-  "default_currency",
   "default_price_list",
   "column_break_14",
   "language",
@@ -69,7 +70,8 @@
   "default_commission_rate",
   "sales_team_section",
   "sales_team",
-  "customer_pos_id"
+  "customer_pos_id",
+  "column_break_62"
  ],
  "fields": [
   {
@@ -495,13 +497,23 @@
    "label": "Delivery Term",
    "options": "Delivery Term",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount_by_brand",
+   "fieldtype": "Table",
+   "label": "Discount By Brand",
+   "options": "Customer Brand Discount"
   }
  ],
  "icon": "fa fa-user",
  "idx": 363,
  "image_field": "image",
- "modified": "2021-01-03 17:57:48.099361",
- "modified_by": "Administrator",
+ "modified": "2021-01-08 12:40:50.369764",
+ "modified_by": "ds@partsupinc.com",
  "module": "Selling",
  "name": "Customer",
  "name_case": "Title Case",
