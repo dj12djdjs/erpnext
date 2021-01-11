@@ -176,7 +176,7 @@
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "ACC-PINV-.YYYY.-",
+   "options": "AC.####",
    "print_hide": 1,
    "reqd": 1,
    "set_only_once": 1
@@ -1291,10 +1291,10 @@
    "fieldtype": "Column Break"
   },
   {
-    "fieldname": "project",
-    "fieldtype": "Link",
-    "label": "Project",
-    "options": "Project"
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
   },
   {
    "fieldname": "tax_withholding_category",
@@ -1308,8 +1308,8 @@
  "icon": "fa fa-file-text",
  "idx": 204,
  "is_submittable": 1,
- "modified": "2020-09-21 12:22:09.164068",
- "modified_by": "Administrator",
+ "modified": "2021-01-11 09:45:43.988823",
+ "modified_by": "ds@partsupinc.com",
  "module": "Accounts",
  "name": "Purchase Invoice",
  "name_case": "Title Case",
