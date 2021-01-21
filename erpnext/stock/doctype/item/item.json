@@ -1079,9 +1079,11 @@
   {
    "allow_in_quick_entry": 1,
    "bold": 1,
+   "default": "0.00",
    "fieldname": "pl",
    "fieldtype": "Data",
-   "label": "PL"
+   "label": "PL",
+   "reqd": 1
   },
   {
    "allow_in_quick_entry": 1,
@@ -1103,8 +1105,8 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
- "modified": "2020-12-29 13:29:45.598825",
- "modified_by": "Administrator",
+ "modified": "2021-01-12 13:29:21.884757",
+ "modified_by": "ds@partsupinc.com",
  "module": "Stock",
  "name": "Item",
  "owner": "Administrator",

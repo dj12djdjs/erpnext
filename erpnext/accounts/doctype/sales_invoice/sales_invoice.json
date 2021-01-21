@@ -5,6 +5,12 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "proforma_information_section",
+  "proforma_id",
+  "note",
+  "vehicle_information_section",
+  "vehicle",
+  "vin",
   "customer_section",
   "title",
   "naming_series",
@@ -589,7 +595,7 @@
    "options": "fa fa-shopping-cart"
   },
   {
-   "default": "1",
+   "default": "0",
    "fieldname": "update_stock",
    "fieldtype": "Check",
    "label": "Update Stock",
@@ -1564,12 +1570,43 @@
   {
    "fieldname": "dimension_col_break",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_information_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Information"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Data",
+   "label": "Vehicle"
+  },
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "VIN"
+  },
+  {
+   "fieldname": "proforma_information_section",
+   "fieldtype": "Section Break",
+   "label": "Proforma Information"
+  },
+  {
+   "fieldname": "proforma_id",
+   "fieldtype": "Data",
+   "label": "Proforma ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 181,
  "is_submittable": 1,
- "modified": "2021-01-08 10:27:25.668944",
+ "modified": "2021-01-19 15:54:53.411558",
  "modified_by": "ds@partsupinc.com",
  "module": "Accounts",
  "name": "Sales Invoice",

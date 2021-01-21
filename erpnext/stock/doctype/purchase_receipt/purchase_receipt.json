@@ -18,6 +18,7 @@
   "posting_date",
   "posting_time",
   "set_posting_time",
+  "delivery_reference",
   "company",
   "is_return",
   "return_against",
@@ -1066,14 +1067,19 @@
    "fieldtype": "Link",
    "label": "Project",
    "options": "Project"
+  },
+  {
+   "fieldname": "delivery_reference",
+   "fieldtype": "Link",
+   "label": "Delivery Reference",
+   "options": "Account"
   }
  ],
  "icon": "fa fa-truck",
  "idx": 261,
  "is_submittable": 1,
- "links": [],
- "modified": "2020-07-15 12:49:42.095297",
- "modified_by": "Administrator",
+ "modified": "2021-01-21 10:03:40.471343",
+ "modified_by": "ds@partsupinc.com",
  "module": "Stock",
  "name": "Purchase Receipt",
  "owner": "Administrator",

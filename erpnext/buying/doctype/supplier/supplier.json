@@ -73,7 +73,7 @@
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "500100.###",
+   "options": "500100.###\n500200.###",
    "set_only_once": 1
   },
   {
@@ -383,7 +383,7 @@
  "icon": "fa fa-user",
  "idx": 370,
  "image_field": "image",
- "modified": "2021-01-01 23:57:35.018861",
+ "modified": "2021-01-12 17:45:48.710163",
  "modified_by": "ds@partsupinc.com",
  "module": "Buying",
  "name": "Supplier",

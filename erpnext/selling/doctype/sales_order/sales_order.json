@@ -11,6 +11,11 @@
   "column_break0",
   "title",
   "naming_series",
+  "proforma_id",
+  "sales_person",
+  "vehicle",
+  "vin",
+  "note",
   "customer",
   "customer_name",
   "order_type",
@@ -1191,13 +1196,39 @@
    "hidden": 1,
    "label": "Skip Delivery Note",
    "print_hide": 1
+  },
+  {
+   "fieldname": "proforma_id",
+   "fieldtype": "Data",
+   "label": "Proforma ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Data",
+   "label": "Sales Person"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Data",
+   "label": "Vehicle"
+  },
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "VIN"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
- "modified": "2020-12-29 13:32:28.884472",
- "modified_by": "Administrator",
+ "modified": "2021-01-19 14:44:28.310033",
+ "modified_by": "ds@partsupinc.com",
  "module": "Selling",
  "name": "Sales Order",
  "owner": "Administrator",
