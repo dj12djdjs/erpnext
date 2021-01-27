@@ -1,13 +1,15 @@
 {
  "allow_import": 1,
- "autoname": "naming_series:",
+ "autoname": "JE.####",
  "creation": "2013-03-25 10:53:52",
+ "description": "naming_series:",
  "doctype": "DocType",
  "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
   "entry_type_and_date",
   "title",
+  "legacy_ref",
   "voucher_type",
   "naming_series",
   "column_break1",
@@ -92,7 +94,7 @@
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "AC.####",
+   "options": "AC.####\nAB.####",
    "print_hide": 1,
    "reqd": 1,
    "set_only_once": 1
@@ -484,12 +486,17 @@
    "options": "Journal Entry",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "legacy_ref",
+   "fieldtype": "Data",
+   "label": "Legacy Ref"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 176,
  "is_submittable": 1,
- "modified": "2021-01-11 10:04:04.997985",
+ "modified": "2021-01-25 11:06:09.258678",
  "modified_by": "ds@partsupinc.com",
  "module": "Accounts",
  "name": "Journal Entry",

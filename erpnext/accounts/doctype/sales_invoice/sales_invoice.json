@@ -21,6 +21,7 @@
   "pos_profile",
   "offline_pos_name",
   "is_return",
+  "is_defective",
   "column_break1",
   "company",
   "posting_date",
@@ -1601,12 +1602,18 @@
    "fieldname": "note",
    "fieldtype": "Data",
    "label": "Note"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_defective",
+   "fieldtype": "Check",
+   "label": "Is Defective"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 181,
  "is_submittable": 1,
- "modified": "2021-01-19 15:54:53.411558",
+ "modified": "2021-01-22 14:36:03.489948",
  "modified_by": "ds@partsupinc.com",
  "module": "Accounts",
  "name": "Sales Invoice",

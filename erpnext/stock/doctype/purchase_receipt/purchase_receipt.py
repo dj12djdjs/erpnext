@@ -206,7 +206,8 @@ class PurchaseReceipt(BuyingController):
 	def get_gl_entries(self, warehouse_account=None):
 		from erpnext.accounts.general_ledger import process_gl_map
 
-		stock_rbnb = self.get_company_default("stock_received_but_not_billed")
+		# stock_rbnb = self.get_company_default("stock_received_but_not_billed")
+		stock_rbnb = self.delivery_reference
 		stock_rbnb_currency = get_account_currency(stock_rbnb)
 		landed_cost_entries = get_item_account_wise_additional_cost(self.name)
 		expenses_included_in_valuation = self.get_company_default("expenses_included_in_valuation")
