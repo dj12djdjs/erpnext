@@ -26,6 +26,8 @@
   "received_and_accepted",
   "received_qty",
   "qty",
+  "bo_customer",
+  "bo_proforma",
   "rejected_qty",
   "col_break2",
   "uom",
@@ -41,6 +43,7 @@
   "base_price_list_rate",
   "sec_break1",
   "rate",
+  "supplier_eta",
   "amount",
   "col_break4",
   "base_rate",
@@ -109,7 +112,7 @@
   },
   {
    "bold": 1,
-   "columns": 3,
+   "columns": 2,
    "fieldname": "item_code",
    "fieldtype": "Link",
    "in_global_search": 1,
@@ -191,7 +194,7 @@
    "width": "100px"
   },
   {
-   "columns": 2,
+   "columns": 1,
    "fieldname": "qty",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -310,11 +313,11 @@
   },
   {
    "bold": 1,
-   "columns": 3,
+   "columns": 2,
    "fieldname": "rate",
    "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "Rate",
+   "label": "NPP",
    "oldfieldname": "import_rate",
    "oldfieldtype": "Currency",
    "options": "currency",
@@ -827,13 +830,34 @@
    "no_copy": 1,
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "bo_customer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BO Customer"
+  },
+  {
+   "columns": 2,
+   "fieldname": "bo_proforma",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BO Proforma"
+  },
+  {
+   "columns": 1,
+   "fieldname": "supplier_eta",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier ETA",
+   "reqd": 1
   }
  ],
  "idx": 1,
  "istable": 1,
- "links": [],
- "modified": "2020-06-20 18:49:16.824489",
- "modified_by": "Administrator",
+ "modified": "2021-02-03 19:53:45.039112",
+ "modified_by": "ds@partsupinc.com",
  "module": "Stock",
  "name": "Purchase Receipt Item",
  "owner": "Administrator",

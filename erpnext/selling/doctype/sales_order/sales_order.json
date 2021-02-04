@@ -1199,7 +1199,7 @@
   },
   {
    "fieldname": "proforma_id",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "Proforma ID",
    "read_only": 1
   },
@@ -1227,7 +1227,7 @@
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
- "modified": "2021-01-19 14:44:28.310033",
+ "modified": "2021-02-03 17:10:43.842796",
  "modified_by": "ds@partsupinc.com",
  "module": "Selling",
  "name": "Sales Order",

@@ -12,6 +12,9 @@
   "naming_series",
   "customer",
   "customer_name",
+  "note",
+  "vin",
+  "legacy_inv",
   "column_break1",
   "amended_from",
   "company",
@@ -172,7 +175,7 @@
    "no_copy": 1,
    "oldfieldname": "naming_series",
    "oldfieldtype": "Select",
-   "options": "INV-.####",
+   "options": "INV-.#####\nCRD-.######",
    "print_hide": 1,
    "reqd": 1,
    "set_only_once": 1
@@ -1230,12 +1233,27 @@
   {
    "fieldname": "section_break_18",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note"
+  },
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "VIN"
+  },
+  {
+   "fieldname": "legacy_inv",
+   "fieldtype": "Data",
+   "label": "Legacy INV"
   }
  ],
  "icon": "fa fa-truck",
  "idx": 146,
  "is_submittable": 1,
- "modified": "2021-01-01 23:59:30.327627",
+ "modified": "2021-01-29 14:15:38.032045",
  "modified_by": "ds@partsupinc.com",
  "module": "Stock",
  "name": "Delivery Note",

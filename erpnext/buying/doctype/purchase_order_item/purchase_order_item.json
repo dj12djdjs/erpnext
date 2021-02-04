@@ -23,6 +23,8 @@
   "manufacturer_part_no",
   "quantity_and_rate",
   "qty",
+  "bo_customer",
+  "bo_proforma",
   "stock_uom",
   "col_break2",
   "uom",
@@ -36,6 +38,7 @@
   "base_price_list_rate",
   "sec_break2",
   "rate",
+  "supplier_eta",
   "amount",
   "item_tax_template",
   "col_break4",
@@ -91,7 +94,7 @@
  "fields": [
   {
    "bold": 1,
-   "columns": 3,
+   "columns": 2,
    "fieldname": "item_code",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -130,7 +133,6 @@
    "columns": 2,
    "fieldname": "schedule_date",
    "fieldtype": "Date",
-   "in_list_view": 1,
    "label": "Reqd By Date",
    "oldfieldname": "schedule_date",
    "oldfieldtype": "Date",
@@ -285,17 +287,17 @@
   },
   {
    "bold": 1,
-   "columns": 2,
+   "columns": 1,
    "fieldname": "rate",
    "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "Rate",
+   "label": "NPP",
    "oldfieldname": "import_rate",
    "oldfieldtype": "Currency",
    "options": "currency"
   },
   {
-   "columns": 2,
+   "columns": 1,
    "fieldname": "amount",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -707,12 +709,33 @@
    "fieldtype": "Check",
    "label": "Is Fixed Asset",
    "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "bo_customer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BO Customer"
+  },
+  {
+   "columns": 2,
+   "fieldname": "bo_proforma",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BO Proforma"
+  },
+  {
+   "columns": 1,
+   "fieldname": "supplier_eta",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier ETA"
   }
  ],
  "idx": 1,
  "istable": 1,
- "modified": "2020-04-07 18:35:17.558928",
- "modified_by": "Administrator",
+ "modified": "2021-02-02 09:36:13.109889",
+ "modified_by": "ds@partsupinc.com",
  "module": "Buying",
  "name": "Purchase Order Item",
  "owner": "Administrator",

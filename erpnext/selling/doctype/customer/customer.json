@@ -18,6 +18,7 @@
   "discount_by_brand",
   "gender",
   "customer_type",
+  "default_company",
   "default_bank_account",
   "lead_name",
   "image",
@@ -507,12 +508,21 @@
    "fieldtype": "Table",
    "label": "Discount By Brand",
    "options": "Customer Brand Discount"
+  },
+  {
+   "default": "PPS Premium Part Supply Inc.",
+   "description": "The default company to invoice.",
+   "fieldname": "default_company",
+   "fieldtype": "Link",
+   "label": "Default Company",
+   "options": "Company",
+   "reqd": 1
   }
  ],
  "icon": "fa fa-user",
  "idx": 363,
  "image_field": "image",
- "modified": "2021-01-08 12:40:50.369764",
+ "modified": "2021-02-02 14:00:42.460226",
  "modified_by": "ds@partsupinc.com",
  "module": "Selling",
  "name": "Customer",
