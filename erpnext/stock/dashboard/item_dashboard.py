@@ -5,7 +5,7 @@ from frappe.model.db_query import DatabaseQuery
 
 @frappe.whitelist()
 def get_data(item_code=None, warehouse=None, item_group=None,
-	start=0, sort_by='actual_qty', sort_order='desc'):
+	start=0, sort_by='actual_qty', sort_order='desc', page_length='21'):
 	'''Return data to render the item dashboard'''
 	filters = []
 	if item_code:
@@ -40,7 +40,7 @@ def get_data(item_code=None, warehouse=None, item_group=None,
 		filters=filters,
 		order_by=sort_by + ' ' + sort_order,
 		limit_start=start,
-		limit_page_length='21')
+		limit_page_length=page_length)
 
 	for item in items:
 		item.update({
