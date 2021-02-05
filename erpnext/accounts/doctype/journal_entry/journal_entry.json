@@ -1,6 +1,6 @@
 {
  "allow_import": 1,
- "autoname": "JE.####",
+ "autoname": "naming_series:",
  "creation": "2013-03-25 10:53:52",
  "description": "naming_series:",
  "doctype": "DocType",
@@ -496,7 +496,7 @@
  "icon": "fa fa-file-text",
  "idx": 176,
  "is_submittable": 1,
- "modified": "2021-01-25 11:06:09.258678",
+ "modified": "2021-02-04 16:36:29.102225",
  "modified_by": "ds@partsupinc.com",
  "module": "Accounts",
  "name": "Journal Entry",
