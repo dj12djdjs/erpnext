@@ -1240,6 +1240,7 @@
    "oldfieldtype": "Section Break"
   },
   {
+   "default": "Default",
    "fieldname": "tc_name",
    "fieldtype": "Link",
    "label": "Terms",
@@ -1249,6 +1250,7 @@
    "print_hide": 1
   },
   {
+   "default": "Default",
    "fieldname": "terms",
    "fieldtype": "Text Editor",
    "label": "Terms and Conditions Details",
@@ -1613,7 +1615,7 @@
  "icon": "fa fa-file-text",
  "idx": 181,
  "is_submittable": 1,
- "modified": "2021-01-22 14:36:03.489948",
+ "modified": "2021-02-06 12:56:43.464302",
  "modified_by": "ds@partsupinc.com",
  "module": "Accounts",
  "name": "Sales Invoice",

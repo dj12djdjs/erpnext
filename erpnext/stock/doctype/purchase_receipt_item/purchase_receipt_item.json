@@ -313,7 +313,7 @@
   },
   {
    "bold": 1,
-   "columns": 2,
+   "columns": 1,
    "fieldname": "rate",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -395,7 +395,6 @@
    "columns": 2,
    "fieldname": "net_amount",
    "fieldtype": "Currency",
-   "in_list_view": 1,
    "label": "Net Amount",
    "options": "currency",
    "print_hide": 1,
@@ -455,6 +454,7 @@
   },
   {
    "bold": 1,
+   "columns": 4,
    "fieldname": "warehouse",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -832,30 +832,24 @@
    "read_only": 1
   },
   {
-   "columns": 2,
    "fieldname": "bo_customer",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "BO Customer"
   },
   {
-   "columns": 2,
    "fieldname": "bo_proforma",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "BO Proforma"
   },
   {
-   "columns": 1,
    "fieldname": "supplier_eta",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Supplier ETA"
   }
  ],
  "idx": 1,
  "istable": 1,
- "modified": "2021-02-04 14:54:26.342775",
+ "modified": "2021-02-11 14:37:10.636236",
  "modified_by": "ds@partsupinc.com",
  "module": "Stock",
  "name": "Purchase Receipt Item",
