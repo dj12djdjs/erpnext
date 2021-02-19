@@ -3,7 +3,7 @@ from frappe import _
 
 def get_data():
 	return {
-		'heatmap': True,
+		'heatmap': False,
 		'heatmap_message': _('This is based on stock movement. See {0} for details')\
 			.format('<a href="#query-report/Stock Ledger">' + _('Stock Ledger') + '</a>'),
 		'fieldname': 'item_code',
@@ -14,10 +14,10 @@ def get_data():
 			'Batch': 'item'
 		},
 		'transactions': [
-			{
-				'label': _('Groups'),
-				'items': ['BOM', 'Product Bundle', 'Item Alternative']
-			},
+#			{
+#				'label': _('Groups'),
+#				'items': ['BOM', 'Product Bundle', 'Item Alternative']
+#			},
 			{
 				'label': _('Pricing'),
 				'items': ['Item Price', 'Pricing Rule']
@@ -31,17 +31,17 @@ def get_data():
 				'items': ['Material Request', 'Supplier Quotation', 'Request for Quotation',
 					'Purchase Order', 'Purchase Receipt', 'Purchase Invoice']
 			},
-			{
-				'label': _('Traceability'),
-				'items': ['Serial No', 'Batch']
-			},
-			{
-				'label': _('Move'),
-				'items': ['Stock Entry']
-			},
-			{
-				'label': _('Manufacture'),
-				'items': ['Production Plan', 'Work Order', 'Item Manufacturer']
-			}
+#			{
+#				'label': _('Traceability'),
+#				'items': ['Serial No', 'Batch']
+#			},
+#			{
+#				'label': _('Move'),
+#				'items': ['Stock Entry']
+#			},
+#			{
+#				'label': _('Manufacture'),
+#				'items': ['Production Plan', 'Work Order', 'Item Manufacturer']
+#			}
 		]
 	}
