@@ -495,7 +495,7 @@
  "icon": "fa fa-file-text",
  "idx": 176,
  "is_submittable": 1,
- "modified": "2021-02-10 08:31:04.538848",
+ "modified": "2021-02-19 09:47:35.900321",
  "modified_by": "ds@partsupinc.com",
  "module": "Accounts",
  "name": "Journal Entry",
