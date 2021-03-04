@@ -42,7 +42,6 @@
   "earning",
   "earnings",
   "deduction",
-  "calculate_deductions",
   "deductions",
   "totals",
   "gross_pay",
@@ -61,7 +60,18 @@
   "rounded_total",
   "section_break_55",
   "total_in_words",
-  "amended_from"
+  "amended_from",
+  "payroll_factors_section",
+  "is_owner",
+  "cpp_employee",
+  "cpp_employer",
+  "ei_employee",
+  "ei_employer",
+  "vac",
+  "wsib",
+  "no_pays",
+  "cpp_max",
+  "ei_max"
  ],
  "fields": [
   {
@@ -462,15 +472,90 @@
    "read_only": 1
   },
   {
-   "fieldname": "calculate_deductions",
-   "fieldtype": "Button",
-   "label": "Calculate Deductions"
+   "fieldname": "payroll_factors_section",
+   "fieldtype": "Section Break",
+   "label": "Payroll Factors"
+  },
+  {
+   "default": "0.0545",
+   "fieldname": "cpp_employee",
+   "fieldtype": "Float",
+   "label": "CPP Employee",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "default": "0.0545",
+   "fieldname": "cpp_employer",
+   "fieldtype": "Float",
+   "label": "CPP Employer",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "default": "0.0158",
+   "fieldname": "ei_employee",
+   "fieldtype": "Float",
+   "label": "EI Employee",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "default": "0.02212",
+   "fieldname": "ei_employer",
+   "fieldtype": "Float",
+   "label": "EI Employer",
+   "precision": "5",
+   "read_only": 1
+  },
+  {
+   "default": "0.04",
+   "fieldname": "vac",
+   "fieldtype": "Float",
+   "label": "VAC",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0.0085",
+   "fieldname": "wsib",
+   "fieldtype": "Float",
+   "label": "WSIB",
+   "length": 4,
+   "read_only": 1
+  },
+  {
+   "default": "26",
+   "fieldname": "no_pays",
+   "fieldtype": "Int",
+   "label": "NO PAYS",
+   "read_only": 1
+  },
+  {
+   "default": "61500",
+   "fieldname": "cpp_max",
+   "fieldtype": "Int",
+   "label": "CPP MAX",
+   "read_only": 1
+  },
+  {
+   "default": "56300",
+   "fieldname": "ei_max",
+   "fieldtype": "Int",
+   "label": "EI MAX",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_owner",
+   "fieldtype": "Check",
+   "label": "Is Owner"
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 9,
  "is_submittable": 1,
- "modified": "2021-02-18 09:44:51.698090",
+ "modified": "2021-03-04 17:05:06.846977",
  "modified_by": "ds@partsupinc.com",
  "module": "HR",
  "name": "Salary Slip",
