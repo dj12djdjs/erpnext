@@ -1061,14 +1061,9 @@
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
-<<<<<<< HEAD
- "modified": "2021-02-01 10:15:23.684357",
- "modified_by": "ds@partsupinc.com",
-=======
  "links": [],
  "modified": "2021-01-22 20:27:11.418690",
  "modified_by": "Administrator",
->>>>>>> version-12
  "module": "Buying",
  "name": "Purchase Order",
  "owner": "Administrator",
