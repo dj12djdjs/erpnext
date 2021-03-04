@@ -310,6 +310,7 @@
    "label": "Description"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "brand",
    "fieldtype": "Link",
    "label": "Brand",
@@ -319,6 +320,7 @@
    "print_hide": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "in_preview": 1,
@@ -1112,7 +1114,7 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
- "modified": "2021-01-28 09:22:03.170703",
+ "modified": "2021-02-23 15:15:02.172750",
  "modified_by": "ds@partsupinc.com",
  "module": "Stock",
  "name": "Item",
