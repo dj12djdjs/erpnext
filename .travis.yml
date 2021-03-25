@@ -43,7 +43,7 @@ install:
   - git clone https://github.com/frappe/bench --depth 1
   - pip install -e ./bench
 
-  - git clone https://github.com/frappe/frappe --branch $TRAVIS_BRANCH --depth 1
+  - git clone https://github.com/frappe/frappe --branch version-12 --depth 1
   - bench init --skip-assets --frappe-path ~/frappe --python $(which python) frappe-bench
 
   - mkdir ~/frappe-bench/sites/test_site
@@ -72,7 +72,7 @@ install:
   - sed -i 's/socketio:/# socketio:/g' Procfile
   - sed -i 's/redis_socketio:/# redis_socketio:/g' Procfile
 
-  - bench get-app erpnext $TRAVIS_BUILD_DIR
+  - bench get-app https://github.com/dj12djdjs/erpnext $TRAVIS_BUILD_DIR
   - bench start &
   - bench --site test_site reinstall --yes
 
