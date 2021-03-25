@@ -1504,10 +1504,10 @@ def validate_inter_company_transaction(doc, doctype):
 		partytype = "Supplier" if doctype in ["Sales Invoice", "Sales Order"] else "Customer"
 		frappe.throw(_("No {0} found for Inter Company Transactions.").format(partytype))
 
-	company = details.get("company")
-	default_currency = frappe.get_cached_value('Company', company, "default_currency")
-	if default_currency != doc.currency:
-		frappe.throw(_("Company currencies of both the companies should match for Inter Company Transactions."))
+	# company = details.get("company")
+	# default_currency = frappe.get_cached_value('Company', company, "default_currency")
+	# if default_currency != doc.currency:
+	# 	frappe.throw(_("Company currencies of both the companies should match for Inter Company Transactions."))
 
 	return
 
