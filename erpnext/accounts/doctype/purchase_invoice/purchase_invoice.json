@@ -21,7 +21,6 @@
   "posting_date",
   "posting_time",
   "set_posting_time",
-  "delivery_reference",
   "amended_from",
   "accounting_dimensions_section",
   "cost_center",
@@ -1304,19 +1303,12 @@
    "label": "Tax Withholding Category",
    "options": "Tax Withholding Category",
    "print_hide": 1
-  },
-  {
-   "fieldname": "delivery_reference",
-   "fieldtype": "Link",
-   "label": "Account to be Debited",
-   "options": "Account",
-   "reqd": 1
   }
  ],
  "icon": "fa fa-file-text",
  "idx": 204,
  "is_submittable": 1,
- "modified": "2021-01-22 12:18:11.031236",
+ "modified": "2021-03-16 12:46:24.776258",
  "modified_by": "ds@partsupinc.com",
  "module": "Accounts",
  "name": "Purchase Invoice",

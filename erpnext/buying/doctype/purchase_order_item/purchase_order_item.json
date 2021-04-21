@@ -23,6 +23,7 @@
   "manufacturer_part_no",
   "quantity_and_rate",
   "qty",
+  "received_qty",
   "bo_customer",
   "bo_proforma",
   "stock_uom",
@@ -79,7 +80,6 @@
   "section_break_56",
   "stock_qty",
   "column_break_60",
-  "received_qty",
   "returned_qty",
   "accounting_details",
   "expense_account",
@@ -587,8 +587,10 @@
    "width": "100px"
   },
   {
+   "columns": 1,
    "fieldname": "received_qty",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Received Qty",
    "no_copy": 1,
    "oldfieldname": "received_qty",
@@ -713,10 +715,8 @@
    "read_only": 1
   },
   {
-   "columns": 2,
    "fieldname": "bo_customer",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "BO Customer"
   },
   {
@@ -734,8 +734,8 @@
  ],
  "idx": 1,
  "istable": 1,
- "modified": "2021-02-22 12:44:39.276017",
- "modified_by": "Administrator",
+ "modified": "2021-03-10 17:20:02.452782",
+ "modified_by": "ds@partsupinc.com",
  "module": "Buying",
  "name": "Purchase Order Item",
  "owner": "Administrator",

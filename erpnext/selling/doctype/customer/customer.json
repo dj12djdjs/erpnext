@@ -87,7 +87,7 @@
    "fieldtype": "Select",
    "label": "Series",
    "no_copy": 1,
-   "options": "400300.###\n400200.###",
+   "options": "400300.###\n400200.###\n400400.###",
    "set_only_once": 1
   },
   {
@@ -522,7 +522,7 @@
  "icon": "fa fa-user",
  "idx": 363,
  "image_field": "image",
- "modified": "2021-02-02 14:00:42.460226",
+ "modified": "2021-03-05 15:59:55.439852",
  "modified_by": "ds@partsupinc.com",
  "module": "Selling",
  "name": "Customer",

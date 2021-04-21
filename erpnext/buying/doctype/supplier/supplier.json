@@ -14,6 +14,7 @@
   "supplier_name",
   "country",
   "default_bank_account",
+  "company",
   "tax_id",
   "tax_category",
   "tax_withholding_category",
@@ -378,12 +379,19 @@
    "fieldname": "allow_purchase_invoice_creation_without_purchase_receipt",
    "fieldtype": "Check",
    "label": "Allow Purchase Invoice Creation Without Purchase Receipt"
+  },
+  {
+   "description": "Which company has access to this supplier.",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
  "icon": "fa fa-user",
  "idx": 370,
  "image_field": "image",
- "modified": "2021-01-23 08:56:28.415832",
+ "modified": "2021-03-11 12:10:13.083789",
  "modified_by": "ds@partsupinc.com",
  "module": "Buying",
  "name": "Supplier",
