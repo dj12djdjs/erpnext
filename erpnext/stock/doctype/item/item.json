@@ -128,6 +128,7 @@
   "weightage",
   "slideshow",
   "website_image",
+  "website_image_alt",
   "thumbnail",
   "cb72",
   "website_warehouse",
@@ -1062,6 +1063,7 @@
    "read_only": 1
   },
   {
+<<<<<<< HEAD
    "allow_in_quick_entry": 1,
    "bold": 1,
    "fieldname": "oem_number",
@@ -1107,15 +1109,22 @@
    "fieldtype": "Table",
    "label": "Competitor Prices",
    "options": "Item Competitor Price"
+  },
+  {
+   "fieldname": "website_image_alt",
+   "fieldtype": "Data",
+   "label": "Image Description"
   }
  ],
  "has_web_view": 1,
  "icon": "fa fa-tag",
  "idx": 2,
  "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
  "max_attachments": 1,
- "modified": "2021-02-23 15:15:02.172750",
- "modified_by": "ds@partsupinc.com",
+ "modified": "2021-03-18 11:24:58.384992",
+ "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
  "owner": "Administrator",
