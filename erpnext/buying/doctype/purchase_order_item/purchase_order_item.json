@@ -715,11 +715,13 @@
    "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "bo_customer",
    "fieldtype": "Data",
    "label": "BO Customer"
   },
   {
+   "allow_on_submit": 1,
    "columns": 2,
    "fieldname": "bo_proforma",
    "fieldtype": "Data",
@@ -734,8 +736,8 @@
  ],
  "idx": 1,
  "istable": 1,
- "modified": "2021-03-10 17:20:02.452782",
- "modified_by": "ds@partsupinc.com",
+ "modified": "2021-06-15 12:28:47.262727",
+ "modified_by": "Administrator",
  "module": "Buying",
  "name": "Purchase Order Item",
  "owner": "Administrator",

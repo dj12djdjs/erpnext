@@ -217,7 +217,7 @@ class PurchaseInvoice(BuyingController):
 		auto_accounting_for_stock = erpnext.is_perpetual_inventory_enabled(self.company)
 
 		if auto_accounting_for_stock:
-			stock_not_billed_account = self.get_company_default("stock_received_but_not_billed")
+			stock_not_billed_account = self.delivery_reference #self.get_company_default("stock_received_but_not_billed")
 			stock_items = self.get_stock_items()
 
 		asset_items = [d.is_fixed_asset for d in self.items if d.is_fixed_asset]
